@@ -1,4 +1,4 @@
-import "./3enRaya.css";
+import "./TresEnRaya.css";
 
 const template = () => ``;
 

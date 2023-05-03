@@ -1,6 +1,6 @@
 import "./Dashboard.css";
 
-const template = () => html `
+const template = () => `
 <div id="containerDashboard">
     <ul>
         <li>
@@ -10,9 +10,9 @@ const template = () => html `
             </figure>
         </li>
         <li>
-            <figure id="figure3enRaya" class="figureDashboard">
-                <img src="https://res.cloudinary.com/dpkqzc5zh/image/upload/v1683129916/hub%20games/44404b6cdbcaacaeb519dd2e746b0d8b_tuxllq.jpg" alt="navigate to page 3enRaya" />
-                <h2>3 en raya</h2>
+            <figure id="figureTresEnRaya" class="figureDashboard">
+                <img src="https://res.cloudinary.com/dpkqzc5zh/image/upload/v1683129916/hub%20games/44404b6cdbcaacaeb519dd2e746b0d8b_tuxllq.jpg" alt="navigate to page TresEnRaya" />
+                <h2>Tres en raya</h2>
             </figure>
         </li>
         <li>
@@ -45,4 +45,6 @@ const template = () => html `
 
 const addListener = () => {};
 
-export const printTemplate = () => {};
+export const printTemplate = () => {
+    document.querySelector("main").innerHTML = template ();
+};
