@@ -1,0 +1,29 @@
+#containerDashboard ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  width: 100%;
+  text-align: center;
+  list-style-type: none;
+  padding-top: 12vh;
+}
+
+#containerDashboard ul img {
+  width: auto;
+  height: 25vh;
+  object-fit: cover;
+  cursor: pointer;
+  border: 5px;
+  border-radius: 1rem;
+}
+
+#containerDashboard ul img:hover {
+  -webkit-box-shadow: 1px -1px 27px 0px rgba(255, 255, 255, 1);
+  -moz-box-shadow: 1px -1px 27px 0px rgba(255, 255, 255, 1);
+  box-shadow: 1px -1px 27px 0px rgba(255, 255, 255, 1);
+}
+
+.figureDashboard h2 {
+  font-size: 20px;
+  color: bisque;
+  cursor: pointer;
+}

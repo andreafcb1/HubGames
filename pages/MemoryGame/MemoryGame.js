@@ -1,7 +1,9 @@
 import "./MemoryGame.css";
 
-const template = () => ``;
+const template = () => `Estoy en Memory Game`;
 
 const addListener = () => {};
 
-export const printTemplate = () => {};
+export const printTemplate = () => {
+    document.querySelector("main").innerHTML = template();
+};

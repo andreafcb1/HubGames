@@ -1,0 +1,46 @@
+header{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img{
+    width: 45vw;
+    height: auto;
+    padding: 0.3rem;
+    object-fit: cover;
+  }
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav button{
+    background: none;
+    border-style: none;
+    width: 0.5rem;
+    margin: 1rem;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+header > .hamburger{
+    border: none;
+    background: transparent;
+    color: whitesmoke;
+    display: none;
+}
+
+@media screen and (max-width:
+730px){
+    header > nav{
+        display: none;
+    }
+    header .hamburger{
+        display: inline;
+    }
+}
