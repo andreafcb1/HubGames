@@ -2,8 +2,10 @@ import { initControler } from "../../utils/route";
 import "./Login.css";
 
 const template = () => `
+<div class="login">
 <input type="text" name="" id=""/>
 <button id="buttonLogin">LOGIN</button>
+</div>
 `;
 
 const addListener = () => {

@@ -15,12 +15,12 @@ const template = () => `
 
 const addListener = () => {
 
-const buttonHome = document.getElementsByClassName("buttonHome");
+const buttonHome = document.querySelector(".buttonHome");
 buttonHome.addEventListener("click", () => {
     initControler("Dashboard");
 });
 
-const buttonLogout = document.getElementsByClassName("buttonLogout");
+const buttonLogout = document.querySelector(".buttonLogout");
 buttonLogout.addEventListener("click", () => {
 localStorage.removeItem("user");
 initControler("Login");
@@ -32,4 +32,5 @@ document.querySelector("nav").style.display = "none";
 
 export const printTemplate = () => {
     document.querySelector("Header").innerHTML = template();
+    addListener();
 };
