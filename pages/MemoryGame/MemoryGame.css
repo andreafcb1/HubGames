@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.game{
+  width: 100vw;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  align-content: center;
+}
+
+h2{
+  color: whitesmoke;
+}
+
+.resetButton{
+  height: 40px;
+    width: 100px;
+    font-weight: bold;
+    background-color: yellow;
+    border-radius: 25px 25px 25px 25px;
+    cursor: pointer;
+}

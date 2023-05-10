@@ -1,29 +1,53 @@
-#containerDashboard ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  width: 100%;
+#containerDashboard {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.saludo {
   text-align: center;
-  list-style-type: none;
-  padding-top: 12vh;
+  padding-top: 5vh;
+}
+.saludo h1 {
+  color: whitesmoke;
 }
 
-#containerDashboard ul img {
-  width: auto;
-  height: 25vh;
+#containerDashboard ul {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding-top: 10vh;
+}
+
+.figureDashboard {
+  width: 380px;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.figureDashboard img {
+  width: 100%;
+  height: 250px;
   object-fit: cover;
+  border-radius: 10%;
   cursor: pointer;
-  border: 5px;
-  border-radius: 1rem;
 }
 
-#containerDashboard ul img:hover {
+.figureDashboard img:hover {
   -webkit-box-shadow: 1px -1px 27px 0px rgba(255, 255, 255, 1);
   -moz-box-shadow: 1px -1px 27px 0px rgba(255, 255, 255, 1);
   box-shadow: 1px -1px 27px 0px rgba(255, 255, 255, 1);
 }
 
-.figureDashboard h2 {
-  font-size: 20px;
-  color: bisque;
+.figureDashboard h2 { 
+  color: whitesmoke;
+  padding: 10px;
   cursor: pointer;
-} 
+}

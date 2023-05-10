@@ -14,8 +14,8 @@ const dataMap = (data) => {
         name: pokemon.name,
         image: pokemon.sprites.other.dream_world.front_default,
         type: pokemon.types,
-        height: pokemon.height,
-        weight: pokemon.weight,
+        height: (pokemon.height)/10,
+        weight: (pokemon.weight)/10,
         id: pokemon.id,
     }));
     

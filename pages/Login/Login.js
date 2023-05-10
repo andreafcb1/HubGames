@@ -3,7 +3,7 @@ import "./Login.css";
 
 const template = () => `
 <div class="login">
-<input type="text" name="" id=""/>
+<input type="text" name="" id="" placeholder="Introduce tu nombre"/>
 <button id="buttonLogin">LOGIN</button>
 </div>
 `;

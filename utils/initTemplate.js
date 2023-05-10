@@ -1,4 +1,5 @@
 import { printTemplate as printHeader } from "../components/Header/Header";
+import { printTemplate as printFooter } from "../components/Footer/Footer";
 
 export const initTemplate = () => {
     const app = document.querySelector("#app");
@@ -8,4 +9,5 @@ export const initTemplate = () => {
 
     app.append(header, main, footer);
     printHeader();
+    printFooter();
 };

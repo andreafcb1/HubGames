@@ -25,18 +25,18 @@ const dataService = async () => {
 };
 
 const createAndPrintFigure = (data) => {
-    document.querySelector(".galleryPokemon").innerHTML = "";
-    data.map((pokemon) => {
-        const classCustomType = `"figurePokemon ${pokemon.type[0].type.name}"`
-        const templateFigure = `
-        <figure class=${classCustomType}>
-        <img src=${pokemon.image} alt=${pokemon.name}/>
-        <h2>${pokemon.name}</h2>
-        <p class="number"><span>#</span>${pokemon.id}</p>
-        <p class="number"><span>Height: </span>${pokemon.height}</p>
-        <p class="number"><span>Weight: </span>${pokemon.weight}</p>
-        </figure>
-        `;
+  document.querySelector(".galleryPokemon").innerHTML = "";
+  data.map((pokemon) => {
+      const classCustomType = `"figurePokemon ${pokemon.type[0].type.name}"`
+      const templateFigure = `
+      <figure class=${classCustomType}>
+      <img src=${pokemon.image} alt=${pokemon.name}/>
+      <h2>${pokemon.name}</h2>
+      <p class="info"><span>#${pokemon.id}</span></p>
+      <p class="info"><span>Height: ${pokemon.height} m</span></p>
+      <p class="info"><span>Weight: ${pokemon.weight} Kg</span></p>
+      </figure>
+      `;
 
         document.querySelector(".galleryPokemon").innerHTML += templateFigure;
     })

@@ -8,7 +8,6 @@ const template = () => `
     <button class="buttonHome"><span class="material-symbols-outlined">home</span></button>
     <button class="buttonLogout"><span class="material-symbols-outlined">logout</span></button>
 </nav>
-<button class="hamburger"><span class="material-symbols-outlined"> menu </span></button>
 `;
 
 // ------ EVENTOS 

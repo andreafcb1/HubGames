@@ -1,0 +1,11 @@
+footer {
+  width: 100vw;
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  color: whitesmoke;
+}

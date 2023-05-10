@@ -1,0 +1,84 @@
+.interface {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 24px;
+}
+
+.interface h1 { 
+    color: whitesmoke;
+    padding-top: 10px;
+  }
+
+  #startGame{
+    height: 30px;
+    width: 90px;
+    font-weight: bold;
+    background-color: yellow;
+    border-radius: 25px 25px 25px 25px;
+    cursor: pointer;
+  }
+
+.gameTopo {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.score {
+    padding: 0 48px;
+    line-height: 2;
+    border-radius: 16px;
+    color: antiquewhite;
+    border: 2px solid black;
+}
+
+.hole {
+    flex: 1 0 33.33%;
+    overflow: hidden;
+    position: relative;
+}
+
+.hole:after {
+    display: block;
+    background: url("https://res.cloudinary.com/dpkqzc5zh/image/upload/v1683639319/hub%20games/Sujeto_8_yy2tmf.png") bottom center no-repeat;
+    background-size: contain;
+    content: "";
+    width: 100%;
+    height: 90px;
+    position: absolute;
+    z-index: 2;
+    bottom: -14px;
+}
+
+.mole {
+    background: url("https://res.cloudinary.com/dpkqzc5zh/image/upload/v1683637059/hub%20games/Sujeto_qp3vrm.png") bottom center no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s;
+}
+
+.hole.up .mole{
+    top: 0;
+}
+
+ @media screen and (max-width: 432px) {
+    .gameTopo {
+        width: 300px;
+        height: 250px;
+    } 
+    .interface {
+        font-size: 15px;
+        padding-top: 40px;
+      } 
+
+      .hole:after {
+        bottom: -8px;
+    } 
+};
+
