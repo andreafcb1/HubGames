@@ -39,11 +39,23 @@ nav img{
 
 /* ------------ MEDIA QUERIES ---------- */
 
+@media screen and (max-width:
+320px){
+    header > img {
+        height: 8vh;
+    }};
+
     @media screen and (max-width:
     414px){
         header > img {
             height: 6vh;
-        }}
+        }};
+
+        @media screen and (max-width:
+    428px){
+        header > img {
+            height: 7vh;
+        }};
 
 
 

@@ -55,6 +55,21 @@
 /* ------------ MEDIA QUERIES ---------- */
 
 @media screen and (max-width:
+320px){
+    .figureDashboard {
+      width: 250px;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  .saludo{
+    font-size: 12px;
+  }
+  };
+
+@media screen and (max-width:
 414px){
     .figureDashboard {
       width: 300px;
@@ -63,5 +78,16 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-    }}
+    }};
+
+    @media screen and (max-width:
+428px){
+    .figureDashboard {
+      width: 300px;
+      height: 250px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }};
 
