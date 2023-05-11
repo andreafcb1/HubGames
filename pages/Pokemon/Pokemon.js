@@ -1,5 +1,7 @@
+import { loading } from "../../components/loading/loading";
 import { dataPokemon } from "../../utils/dataPokemon";
 import "./Pokemon.css";
+
 
 let dataServicePokemon;
 let typeGlobal;
@@ -9,17 +11,19 @@ const template = () => `
         <div id="filterButton">
         </div>
     <input type="text" id="inputPokemon" placeholder="Busca un pokemon"/>
+    <div class="spinner"></div>
     </div>
     <div class="galleryPokemon"></div>
 </div>`;
 
 
 const dataService = async () => {
+  document.querySelector(".spinner").innerHTML = loading();
     const getData = await dataPokemon();
     const { type, pokemonData } = getData;
     dataServicePokemon = pokemonData;
     typeGlobal = type;
-
+    document.querySelector(".spinner").innerHTML = "";
     createAndPrintFigure(dataServicePokemon);
     printButtons(type);
 };

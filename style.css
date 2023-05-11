@@ -9,6 +9,24 @@
   background-image: url(https://res.cloudinary.com/dpkqzc5zh/image/upload/v1683621332/hub%20games/Disen%CC%83o_sin_ti%CC%81tulo_sg4l1q.png);
 }
 
+.lightTheme{
+  background-image: url(https://res.cloudinary.com/dpkqzc5zh/image/upload/v1683128639/hub%20games/Pokemon-Wallpaper_hq1xu1.png);
+}
+
+.lightTheme p{
+  background-color: rgba(0, 0, 0, 0.649);
+  border-radius: 5px;
+}
+
+.lightTheme .h2Dashboard{
+  background-color: rgba(0, 0, 0, 0.649);
+  border-radius: 10px;
+ }
+
+.lightTheme .info{
+  background-color: transparent;
+} 
+
 main{
   min-height: 80vh;
 }  

@@ -27,6 +27,31 @@ nav button{
     cursor: pointer;
 }
 
+nav img{
+    background: none;
+    border-style: none;
+    width: auto;
+    height: 33px;
+    margin-bottom: 8px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+/* ------------ MEDIA QUERIES ---------- */
+
+    @media screen and (max-width:
+    414px){
+        header > img {
+            height: 6vh;
+        }}
+
+
+
+ 
+
+
+
+
 /* header > .hamburger{
     border: none;
     background: transparent;

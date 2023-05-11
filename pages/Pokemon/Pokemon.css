@@ -25,12 +25,12 @@
     border-radius: 10px;
 }
 
-/* h2{
+.galleryPokemon h2{
     font-family: 'Pokemon Solid', sans-serif;
     color: black;
     letter-spacing: 2.5px; 
     margin: 0.3rem;                                        
-} */
+} 
 
 .info {
     color: black;
